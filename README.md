@@ -1,3 +1,5 @@
+# this is my vue test project
+
 # Asp.NETCore 2.0 Vue 2 Starter - by [DevHelp.Online](http://www.DevHelp.Online)
 
 This repo contains an aspnetcore + Vue.js 2 starter template (VS2017). The template is based
