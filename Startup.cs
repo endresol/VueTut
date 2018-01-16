@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Agilite.Entities;
+using Agilite.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Vue2Spa
+namespace Agilite
 {
     public class Startup
     {
@@ -30,6 +33,11 @@ namespace Vue2Spa
         {
             // Add framework services.
             services.AddMvc();
+
+            var connectionstring = "server=35.205.139.20;userid=root;password=EBStesting01;database=agilite";
+            services.AddDbContext<AnimalContext>(o => o.UseMySQL(connectionstring));
+
+            services.AddScoped<IAnimalRepository, AnimalRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
