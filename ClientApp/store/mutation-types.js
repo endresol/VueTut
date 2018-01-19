@@ -1,0 +1,3 @@
+export const MAIN_SET_COUNTER = 'MAIN_SET_COUNTER'
+
+export const INIT_JOKES = 'INIT_JOKES';
