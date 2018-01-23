@@ -10,6 +10,20 @@ export const initJokes = ({commit}) => {
   .then(json => commit(types.INIT_JOKES, json));
 };
 
-export const setCounter = ({commit}, obj) => {
-    commit(types.MAIN_SET_COUNTER, obj)
+export const addJoke = ({commit}, obj) => {
+  fetch(`${jokes_url}/random_joke`, {
+    Method: 'GET',
+  })
+  .then(response => response.json())
+  .then(json => commit(types.ADD_JOKE, json));
 };
+
+export const removeJoke = ({commit}, index) => {
+  commit(types.REMOVE_JOKE, index);
+}
+
+export const setCounter = ({commit}, obj) => {
+  commit(types.MAIN_SET_COUNTER, obj)
+};
+
+

@@ -24,6 +24,14 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+.joke-card {
+    border: solid 2px #2c3350;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 5px;
+
+}
 @media (max-width: 767px) {
     /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
     body {
