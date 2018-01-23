@@ -1,9 +1,9 @@
 import * as types from './mutation-types';
 
-const jokes_10_url = 'https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_ten';
+const jokes_url = 'https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev';
 
 export const initJokes = ({commit}) => {
-  fetch(jokes_10_url, {
+  fetch(`${jokes_url}/random_ten`, {
     Method: 'GET',
   })
   .then(response => response.json())

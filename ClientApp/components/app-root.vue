@@ -21,6 +21,7 @@ import HomePage from './home-page';
 import NavMenu from './nav-menu';
 import Starbase from './starbase';
 import Jokester from './jokester';
+import Turnout from './turnout';
 
 Vue.component('counter-example', CounterExample);
 Vue.component('fetch-data', FetchData);
@@ -28,6 +29,7 @@ Vue.component('home-page', HomePage);
 Vue.component('nav-menu', NavMenu);
 Vue.component('starbase', Starbase);
 Vue.component('jokester', Jokester);
+Vue.component('turnout', Turnout);
 
 export default {
     data() {
