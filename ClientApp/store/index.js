@@ -12,6 +12,7 @@ Vue.use(Vuex)
 const state = {
     counter: 0,
     jokes: [],
+    user: {},
 }
 
 // // ACTIONS

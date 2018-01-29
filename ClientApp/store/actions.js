@@ -26,4 +26,8 @@ export const setCounter = ({commit}, obj) => {
   commit(types.MAIN_SET_COUNTER, obj)
 };
 
+export const signIn = ({commit}, user_payload) => {
+  commit(types.SIGN_IN, user_payload);
+}
+
 

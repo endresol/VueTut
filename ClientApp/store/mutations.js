@@ -14,4 +14,7 @@ export const mutations = {
     [types.REMOVE_JOKE] (state, index) {
         state.jokes.splice(index, 1);
     },
+    [types.SIGN_IN] (state, user_payload) {
+      state.user = user_payload;
+  },
 };
