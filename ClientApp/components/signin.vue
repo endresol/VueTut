@@ -15,6 +15,7 @@
         v-model="password"
       />
       <button class="btn btn-primary" @click="signIn">sign in</button>
+      <router-link to="/signup">New user? Sign up </router-link>
     </div>
     <p>{{error.message}}</p>
   </div>

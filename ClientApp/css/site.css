@@ -76,4 +76,8 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    .signout_btn {
+
+    }
 }

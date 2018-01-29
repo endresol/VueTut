@@ -5,6 +5,7 @@ import Starbase from 'components/starbase';
 import Jokester from 'components/jokester';
 import Turnout from 'components/turnout';
 import Signin from 'components/signin';
+import SignUp from 'components/signup';
 
 export const routes = [
     { path: '/', component: HomePage, display: 'Home', style: 'glyphicon glyphicon-home' },
@@ -14,5 +15,5 @@ export const routes = [
     { path: '/jokester', component: Jokester, display: 'Jokester', style: 'glyphicon glyphicon-thumbs-up' },
     { path: '/turnout', component: Turnout, display: 'Turnout', style: 'glyphicon glyphicon-calendar' },
     { path: '/signin', component: Signin, display: 'Signin', style: 'glyphicon glyphicon-calendar' },
-
+    { path: '/signup', component: SignUp, display: 'Signup', style: 'glyphicon glyphicon-calendar' },
 ]

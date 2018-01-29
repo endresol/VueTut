@@ -13,6 +13,7 @@ const state = {
     counter: 0,
     jokes: [],
     user: {},
+    events: [],
 }
 
 // // ACTIONS
